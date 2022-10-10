@@ -2371,5 +2371,6 @@ func btreeDescendLessOrEqual(tr *btree.BTree, pivot interface{},
 
 func btreeNew(less func(a, b interface{}) bool) *btree.BTree {
 	// Using NewNonConcurrent because we're managing our own locks.
+	// hello
 	return btree.NewNonConcurrent(less)
 }
